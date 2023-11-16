@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Import HTB Machines to Notion
-        run: ./htb-notion.py --htb-token {{ secrets.HTB_APP_TOKEN }} --notion-token ${{ secrets.NOTION_API_KEY }} --notion-db ${{ secrets.NOTION_DB_ID }}
+        run: ./htb-notion.py --htb-token ${{ secrets.HTB_APP_TOKEN }} --notion-token ${{ secrets.NOTION_API_KEY }} --notion-db ${{ secrets.NOTION_DB_ID }}
